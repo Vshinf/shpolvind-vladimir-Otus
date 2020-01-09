@@ -1,0 +1,21 @@
+<script>
+	function sum(ch) {
+		let summ = ch;
+
+		function fs(b) {
+			if( b !== undefined ){
+				summ += b;
+				return fs;
+			}else{
+				return summ;
+			}
+		}
+
+		fs.toString = function() {
+			return summ;
+		};
+		
+		return fs;
+	}
+	alert(sum(1)(2)(3)(1)());
+</script>
