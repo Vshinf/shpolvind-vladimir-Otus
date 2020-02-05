@@ -19,6 +19,8 @@ function getElementPath( element ){
 	return element.tagName;
 }
 function getPath( element ){
+	if(element == null) return "Error: elements is null";
+	
 	var ln = element;
 	var q = getElementPath(ln);
 	if( document.querySelectorAll(q).length == 1 ){
