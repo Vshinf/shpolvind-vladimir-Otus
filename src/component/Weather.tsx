@@ -5,7 +5,7 @@ interface IProps {
 }
 
 interface IState {
-    dataWetherInSity: any,
+    dataWetherInCity: any,
     idCityS: number
 }
 
@@ -14,37 +14,37 @@ interface IState {
 const Api_weather_url: string = 'http://api.openweathermap.org/data/2.5/weather';
 const Api_weather_key: string = 'd9a15b1f49251ac20c57f22caa4e5f94';
 
-export class Weather2 extends Component<IProps, IState> {
+export class Weather extends Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
         this.state = {
-            dataWetherInSity: {},
+            dataWetherInCity: {},
             idCityS: 0
         };
-        this.search3 = this.search3.bind(this);
+        this.searchInApiIdCity = this.searchInApiIdCity.bind(this);
         this.isEmptyObject = this.isEmptyObject.bind(this);
     }
 
     async componentDidUpdate(prevProps: IProps, prevState: IState) {
-        console.log("====componentDidUpdate Weather2====");
-        const { dataWetherInSity, idCityS } = this.state;
+        console.log("====componentDidUpdate Weather====");
+        const { dataWetherInCity, idCityS } = this.state;
         const { idCity } = this.props;
 
         if (idCity !== prevState.idCityS) {
-            const result = await this.search3(idCity);
+            const result = await this.searchInApiIdCity(idCity);
             //console.log("!!!!!", result);
 
             if (!this.isEmptyObject(result)) {
                 this.setState({
-                    dataWetherInSity: result,
+                    dataWetherInCity: result,
                     idCityS: idCity
                 })
             }
         }
     }
 
-   async search3(idCity: number) {
-       console.log("====search3 Weather2====");
+   async searchInApiIdCity(idCity: number) {
+       console.log("====searchInApiIdCity Weather====");
         console.log("idCity2: ", idCity);
         if( idCity != undefined && idCity != 0 ){
             const url = `${Api_weather_url}?id=${idCity}&appid=${Api_weather_key}`;
@@ -68,13 +68,13 @@ export class Weather2 extends Component<IProps, IState> {
     }
 
     render() {
-        const { dataWetherInSity } = this.state;
-        console.log("dataWetherInSity: ", dataWetherInSity);
-        console.log("dataWetherInSity.lenght: ", dataWetherInSity.lenght);
-        if( !this.isEmptyObject(dataWetherInSity) ) {
+        const { dataWetherInCity } = this.state;
+        console.log("dataWetherInCity: ", dataWetherInCity);
+        console.log("dataWetherInCity.lenght: ", dataWetherInCity.lenght);
+        if( !this.isEmptyObject(dataWetherInCity) ) {
             //const { dataBookmarks } = result;
             //console.log("dataWeatherJson =", dataBookmarks);
-            const {coord, weather, base, main, visibility, wind, clouds, dt, sys, id, name} = dataWetherInSity;
+            const {coord, weather, base, main, visibility, wind, clouds, dt, sys, id, name} = dataWetherInCity;
             let icon = 'http://openweathermap.org/img/wn/' + weather[0].icon + "@2x.png";
             const avTemp = Math.floor((main.temp - 273.5) * 10) / 10;
             const flTemp = Math.floor((main.feels_like - 273.5) * 10) / 10;
