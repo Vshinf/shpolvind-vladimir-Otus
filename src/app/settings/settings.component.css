@@ -1,0 +1,11 @@
+.bord-bot-tab {
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+.c_b {
+    width: 250px;
+    padding: 3px 0;
+    font-size: 15px;
+}
