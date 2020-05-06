@@ -50,9 +50,6 @@
 	export default {
 		name: 'Game',
 		components: {CalcButton},
-		comments: {
-			CalcButton,
-		},
 		data() {
 			return{
 				timeToEnd: 60,
