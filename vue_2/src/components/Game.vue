@@ -57,6 +57,7 @@
 	import {mapGetters, mapMutations} from 'vuex';//, mapActions
 	import modal from "./Modal";
 	import CalcButton from "./CalcButton";
+	import router from '../router/index';
 
 	function randomInteger(min, max) {
 		return min + Math.floor((max - min) * Math.random());
@@ -199,13 +200,7 @@
 						}
 					}
 				}else{
-					this.modal.title = "Ошибка";
-					this.modal.text = "Выберите операторы, на странице настроек";
-					this.modal.button = "4";
-					this.$refs.modalComp.showModal();
-					setTimeout(() => {
-						window.location.href = "/";
-					},3000);
+					router.push({path: "/"});
 				}
 			},
 			checkUser() {

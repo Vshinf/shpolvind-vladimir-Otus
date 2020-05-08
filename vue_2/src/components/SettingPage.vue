@@ -48,7 +48,7 @@
 					</label>
 				</div>
 				<router-link to="/game">
-					<button type="button" class="btn btn-light float-right">Play!</button>
+					<button type="button" :disabled="!activePlay" class="btn btn-light float-right">Play!</button>
 				</router-link>
 			</form>
 		</div>
@@ -83,6 +83,12 @@
 		computed: {
 			accuracy: function () {
 				return Math.round(Number(this.getStatsSucssLast) / Number(this.getStatsCountLast) * 100);
+			},
+			activePlay: function () {
+				if( !this.getSettingSumm && !this.getSettingMinus && !this.getSettingMultiplication && !this.getSettingDivision && !this.getSettingExponentiation ){
+					return false;
+				}
+				return true;
 			},
 			...mapGetters([
 				"getStatsDay",
