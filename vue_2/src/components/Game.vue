@@ -1,7 +1,7 @@
 <template>
 	<fragment>
+		<modal ref="modalComp" :title="this.modal.title" :text="this.modal.text" :button="this.modal.button" />
 		<div v-if="!getIsLoading">
-			<modal ref="modalComp" :title="this.modal.title" :text="this.modal.text" :button="this.modal.button" />
 			<div class="header">
 				<router-link to="/">
 					<button type="button" class="btn btn-light float-left fa-bag"><i class="fas fa-times"></i> Отмена</button>
@@ -199,7 +199,13 @@
 						}
 					}
 				}else{
-					window.location.href = "/";
+					this.modal.title = "Ошибка";
+					this.modal.text = "Выберите операторы, на странице настроек";
+					this.modal.button = "4";
+					this.$refs.modalComp.showModal();
+					setTimeout(() => {
+						window.location.href = "/";
+					},3000);
 				}
 			},
 			checkUser() {

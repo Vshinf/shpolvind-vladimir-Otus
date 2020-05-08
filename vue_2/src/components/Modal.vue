@@ -12,7 +12,7 @@
 				<router-link v-else-if="button == '3'" to="/">
 					<button type="button" @click="hideModal" class="btn btn-danger">Я могу лучше</button>
 				</router-link>
-				<button v-else type="button" @click="hideModal" class="btn btn-secondary">Закрыть</button>
+				<button v-else-if="button != '4'" type="button" @click="hideModal" class="btn btn-secondary">Закрыть</button>
 			</div>
 		</b-modal>
 	</div>
