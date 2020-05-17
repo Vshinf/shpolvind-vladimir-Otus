@@ -27,8 +27,7 @@ export class RecentlyAddedComponent implements OnInit {
                  private spliterService: SpliterService ) { }
 
     ngOnInit(): void {
-        this.arrWordsAndTranslate = JSON.parse(localStorage.getItem('translate') || '[]');
-        // this.yaTranslateService.translateWord('Привет').subscribe(res => console.log(res));
+        this.arrWordsAndTranslate = this.localStorageService.get();
     }
 
     showBlockAdd(): void {

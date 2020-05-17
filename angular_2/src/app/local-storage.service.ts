@@ -17,4 +17,8 @@ export class LocalStorageService {
         // console.log(obj);
         localStorage.setItem('translate', JSON.stringify(obj));
     }
+    get(): IArrayWords[] {
+        // console.log(obj);
+        return JSON.parse(localStorage.getItem('translate') || '[]');
+    }
 }
