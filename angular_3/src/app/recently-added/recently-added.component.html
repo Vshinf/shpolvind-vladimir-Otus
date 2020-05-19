@@ -1,0 +1,20 @@
+<app-tabs pTab1="active"></app-tabs>
+<div class="tab-content">
+    <div class="tab-pane fade show active bord-bot-tab p-4">
+        <div class="bl_list">
+            <div class="date">{{dateAdd | date:'dd MMMM yyyy':null:'ru'}}</div>
+            <div *ngIf="showListWord" class="list_word mb-4">
+                <p *ngFor="let item of lastArrWordsAndTranslate">{{item.en}} - {{item.ru}}</p>
+            </div>
+            <div *ngIf="!showListWord" class="mb-4">
+                You have no words added to the dictionary...
+            </div>
+        </div>
+        <div *ngIf="showBlAddWord" class="bl_inp">
+            <label class="label_inp">Enter words separated by semicolons or string</label><br>
+            <input class="form-control" [formControl]="inpAdd">
+            <button class="btn btn-outline-dark" [disabled]="inpAdd.errors" (click)="addNewWord()">Add</button>
+        </div>
+        <button *ngIf="showBtn" (click)="showBlockAdd()" type="button" class="btn btn-info c_b">Add New</button>
+    </div>
+</div>

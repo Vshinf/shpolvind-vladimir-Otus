@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12571b7f-fb80-4b24-957d-da678802f931" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/last-added.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/last-added.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/local-storage.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/local-storage.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/spliter.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/spliter.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ya-translate.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ya-translate.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/not-found/not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/not-found/not-found.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/recently-added/recently-added.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/recently-added/recently-added.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/recently-added/recently-added.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/recently-added/recently-added.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/recently-added/recently-added.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/recently-added/recently-added.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/settings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/settings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/settings.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/settings.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tabs/tabs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tabs/tabs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/training/training.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/training/training.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/training/training.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/training/training.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/training/training.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/training/training.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bBoBXChr7Zjn7YgZOR0YwGwkAc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ng-basics" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="ts.external.directory.path" value="D:\Учеба otus\WebstormProjects\learn-english\node_modules\typescript\lib" />
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (learn-english)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (learn-english)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12571b7f-fb80-4b24-957d-da678802f931" name="Default Changelist" comment="" />
+      <created>1588114713269</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588114713269</updated>
+      <workItem from="1588114715076" duration="20307000" />
+      <workItem from="1588673539136" duration="8027000" />
+      <workItem from="1588784418545" duration="28290000" />
+      <workItem from="1589733805654" duration="50119000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588115065799">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="446" y="175" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1588115065799" />
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588691340275">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588691340275" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1589747876626">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589747876626" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1588114907567">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588114907567" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1588808251214">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1588808251214" />
+  </component>
+</project>
